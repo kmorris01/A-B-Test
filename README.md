@@ -149,3 +149,10 @@ The hypothesis is that by providing this additional option, the number of enroll
 Corresponding to each hypothesis, there are two evaluation metrics: 1. the conversion rate from home page viewers to enrolled users. This will test whether the additional option helps to boost the enrollment. 2. the ratio of revenue over number of home page viewers. This will test for the same unit number of users who viewed the home page, whether the additional option helps to increase the overall revenue.
 
 The initial unit of diversion will be a cookie, because the home page viewers are not necessarily signed in. When users are signed in, user id will be used instead of cookies. The reason for this is that we changed the home page rendering and do not want to confuse the signed in users by letting them see one version at a time, but another version at a different time.
+
+# References--
+Udacity A/B Course Lesson Videos
+Online Calculator--
+http://www.evanmiller.org/ab-testing/sample-size.html
+
+
