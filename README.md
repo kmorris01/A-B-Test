@@ -1,4 +1,4 @@
-# A-B-Test Kristy Morris Project 7-- Udacity 
+# A-B-Test---Kristy Morris Project 7-- Udacity 
 
 
 # Metric Choice--Gross Conversion/Retention/Net Conversion
@@ -30,7 +30,7 @@ Net conversion. The baseline conversion rate is 0.1093125, and d_min is 0.0075. 
 If we keep the retention rate as a evaluation metric, the number of required pages will be too large (in order to get 4.7 million page views, it takes 117 days of full site traffic, which is not realistic). Therefore we decide to drop the retention rate evaluation metric, and use gross conversion and net conversion as evaluation metrics, and the required number of page views (take the larger one) is 685325.
 
 
-Duration vs. Exposure
+# Duration vs. Exposure
 
 We decide to redirect 50% of the traffic to our experiment, and the length of the experiment is therefore 685325 / (40000 * 0.5) = 34.3 days (where 40000 is the baseline number of visitors per day).
 
@@ -38,7 +38,7 @@ The 50% traffic being redirected to the experiment means that 25% will go to con
 
 # Analysis--
 
-Sanity Checks
+# Sanity Checks
 
 For counts ("number of cookies" and "number of clicks"), we model the assignment to control and experiment group as a Bernoulli distribution with probability 0.5. Therefore the standard deviation is std = sqrt(0.5 * 0.5 / (N_1 + N_2)), and the margin of error is me = 1.96 * std. The lower bound will be 0.5 - me and the higher bound will be 0.5 + me. The actual observed value is number of assignments to control group divide by the number of total assignments.
 
@@ -126,19 +126,19 @@ lower = d - se_pooled = -0.0116
 upper = d + se_pooled = 0.0019
 Since the interval contains 0, it is not statistical significant, and consequently not practical significant either.
 
-Sign Tests
+# Sign Tests
 
 I used the online calculator to perform the sign tests.
 For gross conversion, the number of days we see an improvement in experiment group is 4, out of total 23 days of experiment. With probability 0.5 (for sign test), the online calculator calculates a p-value 0.0026, which is smaller than alpha = 0.05. Therefore the change is statistical significant.
 
 For net conversion, the number of days we see an improvement in experiment group is 10, out of total 23 days of experiment. With probability 0.5 (for sign test), the online calculator calculates a p-value 0.6776, which is larger than alpha = 0.05. Therefore the change is not statistical significant.
 
-Summary--
+# Summary--
 I decided not to use Bonferroni correction, because the metrics in the test has high correlation and the Bonferroni correction will be too conservative to it.
 
 Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, but not affect the net conversion rate in a practically significant ways.
 
-Recommendation--
+# Recommendation--
 Based on the analysis above, I recommend not to adopt the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. In other words, it does not increase the number of paid users, which fails the original goal of launching this feature.
 
 # Follow-Up Experiment--
