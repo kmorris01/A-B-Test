@@ -20,9 +20,9 @@ For Bernoulli distribution with probability p and population N, the analytical s
 
 Number of Samples vs. Power
 
-I decide not to use Bonferroni correction, because the metrics in the test has high correlation and the Bonferroni correction will be too conservative to it.
+I decided not to use Bonferroni correction, because the metrics in the test has high correlation and the Bonferroni correction will be too conservative to use it.
 
-I calculate the number of samples needed for each metric using the online calculator, with alpha = 0.05, 1 - beta = 0.2. The baseline conversion rate and minimum detectable effect (d_min) are listed individually below. Also note that the number produced by the online calculator is per branch, and in order to have both control and experiment, we need to double the number of required page views.
+I calculated the number of samples needed for each metric using the online calculator, with alpha = 0.05, 1 - beta = 0.2. The baseline conversion rate and minimum detectable effect (d_min) are listed individually below. Also note that the number produced by the online calculator is per branch, and in order to have both control and experiment, we need to double the number of required page views.
 
 Gross conversion. The baseline conversion rate is 0.20625, and d_min is 0.01. The required number of samples calculated from the online calculator is 25835. Note that this is the number of clicks on "start free trial", and in order to get that number, we need 25835 / 0.08 * 2 = 645875 page views.
 Retention. The baseline retention rate is 0.53, and d_min is 0.01. The required number of samples calculated from the online calculator is 39115. Note that this is the number of users who finished the 14 days free trial, and in order to get that number, we need 39115 / 0.08 / 0.20625 * 2 = 4741212 page views.
