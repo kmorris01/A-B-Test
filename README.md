@@ -14,9 +14,12 @@ Net conversion: That is, The result of the previous two evaluation metrics: gros
 
 # Measuring Variability--
 The analytical standard deviation is computed as std = sqrt(p * (1-p)/N)
+
 Gross conversion: std = sqrt(0.20625*(1-0.20625)/3200) = 0.00715 (correspond to 3200 clicks & 40000 pageviews).
 For 5000 pageviews, we have new  std = 0.00715 * sqrt(40000/5000) = 0.0202 
+
 Retention: std = sqrt((0.53*(1-0.53)/660) * sqrt(40000/5000))) = 0.549
+
 Net conversion: std = sqrt(0.1093125*(1-0.1093125)/3200) = 0.0055159 (correspond to 3200 clicks & 40000 pageviews).
 For 5000 pageviews, we have new  std = 0.00715 * sqrt(40000/5000) = 0.0156 
 
