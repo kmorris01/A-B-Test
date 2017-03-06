@@ -13,8 +13,26 @@ Net conversion: That is, The result of the previous two evaluation metrics: gros
 
 
 # Measuring Variability--
+The analytical standard deviation is computed as std = sqrt(p * (1-p)/N)
+Gross conversion: std = sqrt(0.20625*(1-0.20625)/3200) = 0.00715 (correspond to 3200 clicks & 40000 pageviews).
+For 5000 pageviews, we have new  std = 0.00715 * sqrt(40000/5000) = 0.0202 
+Retention: std = sqrt((0.53*(1-0.53)/660) * sqrt(40000/5000))) = 0.549
+Net conversion: std = sqrt(0.1093125*(1-0.1093125)/3200) = 0.0055159 (correspond to 3200 clicks & 40000 pageviews).
+For 5000 pageviews, we have new  std = 0.00715 * sqrt(40000/5000) = 0.0156 
 
-For Bernoulli distribution with probability p and population N, the analytical standard deviation is computed as std = sqrt(p * (1-p) / N).  To understand whether the analytical estimates of standard deviation are accurate, i.e. whether it matches the empirical standard deviation, we consider whether or not the unit of analysis and unit of diversion matches up.
+Gross conversion: 0.0202
+Retention: 0.0549
+Net conversion: 0.0156
+
+For each metric you selected as a evaluation metrics, indicate whether you think the analytic estimate would be comparable to the the empirical estimate of the variability, if you had time?  Expained below--
+
+For both Gross Conversion and Net Conversion using number of cookies as denominator, which is also unit of diversion. Here, the unit of diversion is equal to unit of analysis, which indicate the analytical estimate would be comparable to the emperical variability.
+
+For Retention, the denominator is "Number of users enrolled (complete checkout)" which is not similar as Unit of Diversion. The unit of analysis and the unit of diversion are not the same therefore the analytical an the empirical estimates are different.
+
+
+
+
 
 # Sizing--
 
