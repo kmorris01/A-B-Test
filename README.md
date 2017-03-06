@@ -50,12 +50,11 @@ If we keep the retention rate as a evaluation metric, the number of required pag
 
 # Duration vs. Exposure
 
-We decide to redirect 50% of the traffic to our experiment, and the length of the experiment is therefore 685325 / (40000 * 0.5) = 34.3 days (where 40000 is the baseline number of visitors per day).
+I selected to redirect 50% of the traffic to our experiment, and the length of the experiment is therefore 685,325/(40,000 * 0.5) = 34.3 days (where 40,000 is the baseline number of visitors per day).
 
-The 50% traffic being redirected to the experiment means that 25% will go to control group and 25% to experiment group, and therefore we risk about a quarter of users seeing an not-yet-evaluated feature. This is relatively large risk, because those 25% users will see a different rendering of "start free trial" page which potentially discourages them to start the free trial (although the intention is to increase the overall net conversion). But this relatively large risk is a reluctant choice in order to keep the length of the experiment in a reasonable amount of time. If we reduce the risk by half (sending 12.5% users to see not-yet-evaluted feature), the length will be doubled, taking more than 2 months, which is a little too long.
+The 50% traffic is being redirected to the experiment means that 25% will go to control group and 25% to experiment group, and therefore we risk about a quarter of users seeing an not yet evaluated feature. This is relatively large risk, because those 25% users will see a different rendering of "start free trial" page which potentially discourages them to start the free trial (although the intention is to increase the overall net conversion). But this large risk is a uncertain choice in order to keep the length of the experiment in a reasonable amount of time. If we reduce the risk by half (sending 12.5% users to see not-yet-evaluted feature), the length will be doubled, taking more than 2 months, which is a little too long to run in most cases.
 
 # Analysis--
-
 # Sanity Checks
 
 For counts ("number of cookies" and "number of clicks"), we model the assignment to control and experiment group as a Bernoulli distribution with probability 0.5. Therefore the standard deviation is std = sqrt(0.5 * 0.5 / (N_1 + N_2)), and the margin of error is me = 1.96 * std. The lower bound will be 0.5 - me and the higher bound will be 0.5 + me. The actual observed value is number of assignments to control group divide by the number of total assignments.
