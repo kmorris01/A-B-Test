@@ -175,5 +175,8 @@ The initial unit of diversion will be a cookie, because the home page viewers ar
 Udacity A/B Course Lesson Videos
 Online Calculator--
 http://www.evanmiller.org/ab-testing/sample-size.html
+Bernoulli Distribution
+https://en.wikipedia.org/wiki/Bernoulli_distribution
+
 
 
