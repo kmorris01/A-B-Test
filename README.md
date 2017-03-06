@@ -99,7 +99,9 @@ The observed value (experiment value) is within the bounds, and therefore this i
 
 Effect Size Tests
 
-Let N denote the number of total samples (denominator) and X denote the number of target samples (numerator), and _cnt denote controlled group and _exp the experiment group. We first computed pooled probability and pooled standard error as
+Let N denote the number of total samples (denominator) and X denote the number of target samples (numerator), and _cnt denote controlled group and _exp the experiment group. 
+
+We first computed pooled probability and pooled standard error as
 
 p_pooled = (X_cnt + X_exp) / (N_cnt + N_exp)
 se_pooled = sqrt(p_pooled * (1-p_pooled) * (1./N_cnt + 1./N_exp))
@@ -113,7 +115,9 @@ upper = d + se_pooled
 
 Gross conversion
 
-For gross conversion, the total samples (denominator) are the clicks of "start free trial", and the target samples (numerator) are enrolled users. The caculation is shown below.
+For gross conversion, the total samples (denominator) are the clicks of "start free trial", and the target samples (numerator) are enrolled users. 
+
+The caculation is shown below.
 
 N_cnt = clicks_controlled = 17293.
 X_cnt = enroll_controlled = 3785.
@@ -127,11 +131,14 @@ d = X_exp / N_exp - X_cnt / N_cnt = -0.02055
 
 lower = d - se_pooled = -0.0291
 upper = d - se_pooled = -0.0120
+
 Since the interval does not contain 0, the metric is statistical significant. It does not include d_min = 0.01 or -d_min = -0.01 either, and therefore it is also practical significant.
 
 Net conversion
 
-For net conversion, the total samples (denominator) are the clicks of "start free trial", and the target samples (numerator) are paid users. The caculation is shown below.
+For net conversion, the total samples (denominator) are the clicks of "start free trial", and the target samples (numerator) are paid users. 
+
+The caculation is shown below.
 
 N_cnt = clicks_controlled = 17293.
 X_cnt = pay_controlled = 2033.
@@ -145,6 +152,7 @@ d = X_exp / N_exp - X_cnt / N_cnt = -0.0048
 
 lower = d - se_pooled = -0.0116
 upper = d + se_pooled = 0.0019
+
 Since the interval contains 0, it is not statistical significant, and consequently not practical significant either.
 
 # Sign Tests
@@ -155,21 +163,22 @@ For gross conversion, the number of days we see an improvement in experiment gro
 For net conversion, the number of days we see an improvement in experiment group is 10, out of total 23 days of experiment. With probability 0.5 (for sign test), the online calculator calculates a p-value 0.6776, which is larger than alpha = 0.05. Therefore the change is not statistical significant.
 
 # Summary--
-I decided not to use Bonferroni correction, because the metrics in the test has high correlation and the Bonferroni correction will be too conservative to it.
+I decided not to use Bonferroni correction, because the metrics in the test has high correlation and the Bonferroni correction will be too conservative to use it.
 
-Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, but not affect the net conversion rate in a practically significant ways.
+Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, however not affect the net conversion rate in a practically significant ways.
 
 # Recommendation--
 Based on the analysis above, I recommend not to adopt the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. In other words, it does not increase the number of paid users, which fails the original goal of launching this feature.
 
 # Follow-Up Experiment--
-Add an "enroll with discount" button on the home page. (Note that this is an additional option that appears together with "start free trial" button, not replacing it.) This feature will allow users to skip the "free trial" phase, if they desire so, and in exchange they get a tuition discount. This feature will be potentially compelling to users who are already determined to take the course and ready to jump in directly.
+I would recommend adding a "accelerated completion program discount option" button on the home page. This would be in addition to the "start free trial" button, not replacing it. This feature will allow users to skip the "free trial" phase, if they desire so, and in exchange they get a tuition discount, if the complete the program within a shorten time period, such as 6 months.  This feature will be potentially engage the users who are already determined to take the course, and want to jump right in.
 
-The hypothesis is that by providing this additional option, the number of enrollees will be increased, because those who decide to take the course will directly enroll rather than experiencing the free trial, during which they might decide not to enroll for certain reasons. Another hypothesis is that this feature will bring more revenue to Udacity --- even though the users who enroll directly pay less than others, the increasing number of users will be more significant.
+The hypothesis is that by providing this additional option, the number of enrollees will increase, because those who decide to take the course will directly enroll rather than experiencing the free trial, during which they might decide not to enroll for certain reasons. Another hypothesis is that this feature will bring more revenue to Udacity --- even though the users who enroll directly pay less than others, the increasing number of users will be more significant.
 
 Corresponding to each hypothesis, there are two evaluation metrics: 1. the conversion rate from home page viewers to enrolled users. This will test whether the additional option helps to boost the enrollment. 2. the ratio of revenue over number of home page viewers. This will test for the same unit number of users who viewed the home page, whether the additional option helps to increase the overall revenue.
 
-The initial unit of diversion will be a cookie, because the home page viewers are not necessarily signed in. When users are signed in, user id will be used instead of cookies. The reason for this is that we changed the home page rendering and do not want to confuse the signed in users by letting them see one version at a time, but another version at a different time.
+The initial unit of diversion will be a cookie, because the home page viewers are not necessarily signed in. When users are signed in, user id will be used instead of cookies. 
+
 
 # References--
 Udacity A/B Course Lesson Videos
