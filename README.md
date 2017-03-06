@@ -21,7 +21,7 @@ For 5000 pageviews, we have new  std = 0.00715 * sqrt(40000/5000) = 0.0202
 Retention: std = sqrt((0.53*(1-0.53)/660) * sqrt(40000/5000))) = 0.549
 
 Net conversion: std = sqrt(0.1093125*(1-0.1093125)/3200) = 0.0055159 (correspond to 3200 clicks & 40000 pageviews).
-For 5000 pageviews, we have new  std = 0.00715 * sqrt(40000/5000) = 0.0156 
+For 5000 pageviews, we have new  std = 0.0055159 * sqrt(40000/5000) = 0.0156 
 
 Gross conversion: 0.0202
 Retention: 0.0549
@@ -99,7 +99,7 @@ The observed value (experiment value) is within the bounds, and therefore this i
 
 Effect Size Tests
 
-Let N denote the number of total samples (denominator) and X denote the number of target samples (numerator), and _cnt denote controlled group and _exp the experiment group. 
+Please notice that N denotes the number of total samples (denominator) and X denotes the number of target samples (numerator), and _cnt denotes controlled group and _exp the experiment group. 
 
 We first computed pooled probability and pooled standard error as
 
@@ -119,10 +119,10 @@ For gross conversion, the total samples (denominator) are the clicks of "start f
 
 The caculation is shown below.
 
-N_cnt = clicks_controlled = 17293.
-X_cnt = enroll_controlled = 3785.
-N_exp = clicks_experiment = 17260.
-X_exp = enroll_experiment = 3423.
+N_cnt = clicks_controlled = 17293
+X_cnt = enroll_controlled = 3785
+N_exp = clicks_experiment = 17260
+X_exp = enroll_experiment = 3423
 
 p_pooled = (X_cnt + X_exp) / (N_cnt + N_exp) = 0.2086
 se_pooled = sqrt(p_pooled * (1-p_pooled) * (1./N_cnt + 1./N_exp)) = 0.00437
@@ -140,10 +140,10 @@ For net conversion, the total samples (denominator) are the clicks of "start fre
 
 The caculation is shown below.
 
-N_cnt = clicks_controlled = 17293.
-X_cnt = pay_controlled = 2033.
-N_exp = enroll_experiment = 17260.
-X_exp = pay_experiment = 1945.
+N_cnt = clicks_controlled = 17293
+X_cnt = pay_controlled = 2033
+N_exp = enroll_experiment = 17260
+X_exp = pay_experiment = 1945
 
 p_pooled = (X_cnt + X_exp) / (N_cnt + N_exp) = 0.1151
 se_pooled = sqrt(p_pooled * (1-p_pooled) * (1./N_cnt + 1./N_exp)) = 0.00343
@@ -163,12 +163,12 @@ For gross conversion, the number of days we see an improvement in experiment gro
 For net conversion, the number of days we see an improvement in experiment group is 10, out of total 23 days of experiment. With probability 0.5 (for sign test), the online calculator calculates a p-value 0.6776, which is larger than alpha = 0.05. Therefore the change is not statistical significant.
 
 # Summary--
-I decided not to use Bonferroni correction, because the metrics in the test has high correlation and the Bonferroni correction will be too conservative to use it.
+I decided not to use Bonferroni correction, because the metrics in the test have a high correlation and the Bonferroni correction will be too conservative to use it.
 
 Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, however not affect the net conversion rate in a practically significant ways.
 
 # Recommendation--
-Based on the analysis above, I recommend not to adopt the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. Meaning, it does not increase the number of paid users, which fails the original goal of our experiment/test.
+Based on the data analysis above, I recommend not to move forward with the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. Meaning, it does not increase the number of paid users, which fails the original goal of our experiment/test.
 
 # Follow-Up Experiment--
 I would recommend adding a "accelerated completion program discount option" button on the home page. This would be in addition to the "start free trial" button, not replacing it. This feature will allow users to skip the "free trial" phase, if they desire so, and in exchange they get a tuition discount, if the complete the program within a shorten time period, such as 6 months.  This feature will be potentially engage the users who are already determined to take the course, and want to jump right in.
