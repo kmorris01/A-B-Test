@@ -31,9 +31,6 @@ For both Gross Conversion and Net Conversion using number of cookies as denomina
 For Retention, the denominator is "Number of users enrolled (complete checkout)" which is not similar as Unit of Diversion. The unit of analysis and the unit of diversion are not the same therefore the analytical an the empirical estimates are different.
 
 
-
-
-
 # Sizing--
 
 Number of Samples vs. Power
@@ -42,10 +39,10 @@ I decided not to use Bonferroni correction, because the metrics in the test has 
 
 I calculated the number of samples needed for each metric using the online calculator, with alpha = 0.05, 1 - beta = 0.2. The baseline conversion rate and minimum detectable effect (d_min) are listed individually below. Also note that the number produced by the online calculator is per branch, and in order to have both control and experiment, we need to double the number of required page views.
 
-Gross conversion. The baseline conversion rate is 0.20625, and d_min is 0.01. The required number of samples calculated from the online calculator is 25835. Note that this is the number of clicks on "start free trial", and in order to get that number, we need 25835 / 0.08 * 2 = 645875 page views.
-Retention. The baseline retention rate is 0.53, and d_min is 0.01. The required number of samples calculated from the online calculator is 39115. Note that this is the number of users who finished the 14 days free trial, and in order to get that number, we need 39115 / 0.08 / 0.20625 * 2 = 4741212 page views.
-Net conversion. The baseline conversion rate is 0.1093125, and d_min is 0.0075. The required number of samples calculated from the online calculator is 27413. Note that this is the number of clicks on "start free trial", and in order to get that number, we need 27413 / 0.08 * 2 = 685325 page views.
-If we keep the retention rate as a evaluation metric, the number of required pages will be too large (in order to get 4.7 million page views, it takes 117 days of full site traffic, which is not realistic). Therefore we decide to drop the retention rate evaluation metric, and use gross conversion and net conversion as evaluation metrics, and the required number of page views (take the larger one) is 685325.
+Gross conversion = The baseline conversion rate is 0.20625, and d_min is 0.01. The required number of samples calculated from the online calculator is 25,835. Note that this is the number of clicks on "start free trial", and in order to get that number, we need 25,835/ 0.08 * 2 = 645,875 page views.
+Retention = The baseline retention rate is 0.53, and d_min is 0.01. The required number of samples calculated from the online calculator is 39,115. Note that this is the number of users who finished the 14 day free trial, and in order to get that number, we need 39,115/ 0.08 / 0.20625 * 2 = 4,741,212 page views.
+Net conversion = The baseline conversion rate is 0.1093125, and d_min is 0.0075. The required number of samples calculated from the online calculator is 27,413. Note that this is the number of clicks on "start free trial", and in order to get that number, we need 27,413/0.08 * 2 = 685,325 page views.
+If we keep the retention rate as a evaluation metric, the number of required pages will be too large (in order to get 4.7 million page views, it takes 117 days of 100% or full site traffic, which is not realistic). Therefore, we decide to drop the retention rate evaluation metric, and use gross conversion and net conversion as evaluation metrics, and the required number of page views (taking the larger one) is 685,325.
 
 
 # Duration vs. Exposure
