@@ -168,7 +168,7 @@ I decided not to use Bonferroni correction, because the metrics in the test has 
 Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, however not affect the net conversion rate in a practically significant ways.
 
 # Recommendation--
-Based on the analysis above, I recommend not to adopt the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. In other words, it does not increase the number of paid users, which fails the original goal of launching this feature.
+Based on the analysis above, I recommend not to adopt the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. Meaning, it does not increase the number of paid users, which fails the original goal of our experiment/test.
 
 # Follow-Up Experiment--
 I would recommend adding a "accelerated completion program discount option" button on the home page. This would be in addition to the "start free trial" button, not replacing it. This feature will allow users to skip the "free trial" phase, if they desire so, and in exchange they get a tuition discount, if the complete the program within a shorten time period, such as 6 months.  This feature will be potentially engage the users who are already determined to take the course, and want to jump right in.
