@@ -187,7 +187,7 @@ Based on the data analysis above, I recommend not to move forward with the chang
 
 
 # Follow-Up Experiment--
-I would recommend adding a "accelerated completion program discount option" button on the home page. This would be in addition to the "start free trial" button, not replacing it. This feature will allow users to skip the "free trial" phase, if they desire so, and in exchange they get a tuition discount, if the complete the program within a shorten time period, such as 6 months.  This feature will be potentially engage the users who are already determined to take the course, and want to jump right in.
+I would recommend adding a "accelerated completion program discount option" button on the home page. This would give the users a tuition discount, if they complete the program within a shorten time period, such as 6 months.  This feature will be potentially engage the users who are already determined to take the course, and want to jump right in.
 
 The hypothesis is that by providing this additional option, the number of enrollees will increase, because those who decide to take the course will directly enroll rather than experiencing the free trial, during which they might decide not to enroll for certain reasons. Another hypothesis is that this feature will bring more revenue to Udacity --- even though the users who enroll directly pay less than others, the increasing number of users will be more significant.  Meaning, larger volume of enrolled users. 
 
