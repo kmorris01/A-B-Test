@@ -191,7 +191,9 @@ I would recommend adding a "accelerated completion program discount option" butt
 
 The hypothesis is that by providing this additional option, the number of enrollees will increase, because those who decide to take the course will directly enroll rather than experiencing the free trial, during which they might decide not to enroll for certain reasons. Another hypothesis is that this feature will bring more revenue to Udacity --- even though the users who enroll directly pay less than others, the increasing number of users will be more significant.  Meaning, larger volume of enrolled users. 
 
-Corresponding to each above, there are two evaluation metrics I would use; 1. the conversion rate from home page viewers to the enrolled users. This would test whether the additional option helps to boost the enrollment. 2. the ratio of revenue over number of home page viewers. This will test for the same unit number of users who viewed the home page, whether the additional option helps to increase the overall revenue of Udacity.
+Corresponding to each above, there are two evaluation metrics I would use; 1. the conversion rate from home page viewers to the enrolled users. This would test whether the additional option helps to boost the enrollment. 2. the ratio of revenue over number of home page viewers. This will test for the same unit number of users who viewed the home page, whether the additional option helps to increase the overall revenue of Udacity.  In addition, 3. retention, the number of user-ids, that clicked the new discount button and stayed enrolled for 14 days and made their first payment, divided by the number of user-ids to complete checkout--this would take some time, but would be good to know.
+
+Invariant metric could be the number of clicks--unquie cookies that clicked on the "accelerated completion program discount" button that day.
 
 The initial unit of diversion will be a cookie, because the home page viewers are not necessarily signed in. When users are signed in, user id will be used instead of cookies. 
 
