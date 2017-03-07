@@ -67,9 +67,11 @@ If we keep the retention rate as a evaluation metric, the number of required pag
 
 # Duration vs. Exposure
 
-I selected to redirect 50% of the traffic to our experiment, and the length of the experiment is therefore 685,325/(40,000 * 0.5) = 34.3 days (where 40,000 is the baseline number of visitors per day).
+I selected to redirect 50% of the traffic to our experiment, and the length of the experiment is therefore 685,325/(40,000 * 0.5) = aprox 35 days (where 40,000 is the baseline number of visitors per day).
 
 The 50% traffic is being redirected to the experiment means that 25% will go to control group and 25% to experiment group, and therefore we risk about a quarter of users seeing an not yet evaluated feature. This could be a financial or business risk, because those 25% users will see a different view of "start free trial" page which potentially discourages them to start the free trial (although the intention is to increase the overall net conversion). However, this is what we will be directly monitoring in this experiment.  This choice is needed in order to keep the length of the experiment in a reasonable amount of time. If we reduce the potential risk by half (sending 12.5% users to see not-yet-evaluted feature), the length will be doubled, taking more than 2 months, which is a little too long to run in most cases.
+
+To try and get below 30 days duration if the client suggests--then we could redirect 80% of the traffice to our experiment, and the length of the experiment is therefore 685,325/(40,000 * 0.8) = aprox 22 days.  Again, the 80% traffic is being redirected to the experiment and would be = to 40% will go to the control group and 40% to the experiment group.  Not a sensitive personal information or medical information, so not a risk that we could not monitor/track.
 
 # Analysis--
 # Sanity Checks
