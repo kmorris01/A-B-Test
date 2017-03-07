@@ -209,5 +209,7 @@ https://en.wikipedia.org/wiki/Bernoulli_distribution
 
 Feedback from 1st reviewer 3/5/2017
 
+Feedback from 2nd reviewer 3/6/2017
+
 
 
