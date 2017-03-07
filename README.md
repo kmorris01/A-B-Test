@@ -12,7 +12,14 @@ Retention: Along the same lines, as the above, we would like to understand wheth
 Net conversion: That is, The result of the previous two evaluation metrics: gross conversion and retention, and it can be considered as a more general goal of the A/B test --- whether carrying out a "5 or more hours per week" suggestion helps increase the ratio of users who make payment over those who see the start free trial page. Therefore, again a good evaluation metric.
 
 ***Invariant Metrics--
+  
   Number of cookies--we do not want the number of users that visit the website to differ as we carry out the "start free trial" page.     The users have not seen this page before.
+  
+  Number of user-ids--this one is neither invariant nor evaluation metric. Due to the enrollment could be dependent upon how we carry     out the "start free trial" page, we could expect to see different values in the control and experiment group. 
+  
+  Number of clicks-- Comparable to number of cookies, this metric does not depend on how we carry out the "start free trial" page,         since the clicked users have not seen that page before they decide to click the button.
+  
+  Click-through-probability--Again, since the users have not seen the page we tested on before they decide to click the button, the       click-through-probability also does not depend on our test.
 
 
 # Measuring Variability--
