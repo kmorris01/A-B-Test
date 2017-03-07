@@ -195,7 +195,7 @@ Corresponding to each above, there are two evaluation metrics I would use; 1. th
 
 Invariant metric could be the number of clicks--unquie cookies that clicked on the "accelerated completion program discount option" button that day.
 
-The initial unit of diversion will be a cookie, because the home page viewers are not necessarily signed in. When users are signed in, user id will be used instead of cookies. 
+Our unit of diversion will be a cookie, because the home page viewers are not necessarily signed in. Then how we would track and gather our data would be with user ids, once enrollees are signed in. 
 
 
 # References--
