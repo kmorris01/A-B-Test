@@ -7,7 +7,7 @@ The metrics I chose are listed below and why--
 
 Gross conversion: That is,  The numbers of user-ids who decide to start the free trial and are expected to depend on how the "start free trial" page is carried out --- whether a "5 or more hours per week" is suggested --- this is one question we would like to understand through this A/B test. Therefore, this is a good evaluation metric.
 
-Retention: Along the same lines, as the above, we would like to understand whether carrying out a "5 or more hours per week" suggestion is helpful to increase ratio of user-ids who will make payments over those who finish the free trial, and therefore this metric is good for evaluation.
+Retention: Along the same lines, as the above, we would like to understand whether carrying out a "5 or more hours per week" suggestion is helpful to increase ratio of user-ids who will make payments over those who finish the free trial, and therefore this metric is good for evaluation. Please note this metric is later dropped due to the duration constraints, please refer to the sizing section for detail related to why dropped.
 
 Net conversion: That is, The result of the previous two evaluation metrics: gross conversion and retention, and it can be considered as a more general goal of the A/B test --- whether carrying out a "5 or more hours per week" suggestion helps increase the ratio of users who make payment over those who see the start free trial page. Therefore, again a good evaluation metric.
 
