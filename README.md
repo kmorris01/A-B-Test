@@ -178,9 +178,9 @@ For gross conversion, the number of days we see an improvement in experiment gro
 For net conversion, the number of days we see an improvement in experiment group is 10, out of total 23 days of experiment. With probability 0.5 (for sign test), the online calculator calculates a p-value 0.6776, which is larger than alpha = 0.05. Therefore the change is not statistical significant.
 
 # Summary--
-I decided not to use Bonferroni correction, because the metrics in the test have a high correlation and the Bonferroni correction will be too conservative to use it.
+I decided not to use Bonferroni correction, because the metrics in the test have a high correlation and the Bonferroni correction will be too conservative to use it. Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, however not affect the net conversion rate in a practically significant ways. I completely understand the importance to correct if a test is launched and the metrics show a significant difference, because it's more likely that one of multiple metrics will be falsely positive as the number of metrics increases. However, we would only launch if all evaluation metrics show a significant change. In that case, there would be no need to use Bonferroni correction. We could of also set up our experiment to consider other strategies, such as using a higher confidence level than the 95% used for each metric.  Possibly, a 99% confidence level. 
 
-Both the effective size hypothesis tests and sign tests state that the change will practically significantly reduce the gross conversion, however not affect the net conversion rate in a practically significant ways.
+
 
 # Recommendation--
 Based on the data analysis above, I recommend not to move forward with the changes of adding "5 or more hour" recommendation to "start free trial" date. The reason is that the A/B test shows that this will not practically significantly increase the net conversion rate. Meaning, it does not increase the number of paid users, which fails the original goal of our experiment/test.
