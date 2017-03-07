@@ -11,6 +11,9 @@ Retention: Along the same lines, as the above, we would like to understand wheth
 
 Net conversion: That is, The result of the previous two evaluation metrics: gross conversion and retention, and it can be considered as a more general goal of the A/B test --- whether carrying out a "5 or more hours per week" suggestion helps increase the ratio of users who make payment over those who see the start free trial page. Therefore, again a good evaluation metric.
 
+***Invariant Metrics--
+  Number of cookies--we do not want the number of users that visit the website to differ as we carry out the "start free trial" page.     The users have not seen this page before.
+
 
 # Measuring Variability--
 The analytical standard deviation is computed as std = sqrt(p * (1-p)/N)
