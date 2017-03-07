@@ -21,7 +21,7 @@ Net conversion: That is, The result of the previous two evaluation metrics: gros
   
   Click-through-probability--Again, since the users have not seen the page we tested on before they decide to click the button, the       click-through-probability also does not depend on our test.  This one would be an invariant metric.  This is a real good invariant       metric, since the clicks happen before the users see the experiment, therefore it does not depend on our test.
   
-  ***Launch Statement--
+  ***Launch Criteria Statement--
 The expectation for the experiment/test could be as follows--the gross conversion will decrease practically significance, which demonstrates that the cost will be lower by introducing the new screener; while the net conversion will not decrease statistically significance, which can indicate that the screener can impact the result of the revenues.
 
   
