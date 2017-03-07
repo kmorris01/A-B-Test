@@ -60,7 +60,7 @@ Retention = The baseline retention rate is 0.53, and d_min is 0.01. The required
 
 Net conversion = The baseline conversion rate is 0.1093125, and d_min is 0.0075. The required number of samples calculated from the online calculator is 27,413. Note that this is the number of clicks on "start free trial", and in order to get that number, we need 27,413/0.08 * 2 = 685,325 page views.
 
-
+Further explains why we dropped retention metric as noted above in metrics section--
 If we keep the retention rate as a evaluation metric, the number of required pages will be too large (in order to get 4.7 million page views, it takes 117 days of 100% or full site traffic, which is not realistic). Therefore, we decide to drop the retention rate evaluation metric, and use gross conversion and net conversion as evaluation metrics, and the required number of page views (taking the larger one) is 685,325.
 
 
