@@ -13,15 +13,15 @@ Net conversion: That is, The result of the previous two evaluation metrics: gros
 
 ***Invariant Metrics--
   
-  Number of cookies--we do not want the number of users that visit the website to differ as we carry out the "start free trial" page.     The users have not seen this page before.
+  Number of cookies--we do not want the number of users that visit the website to differ as we carry out the "start free trial" page.     The users have not seen this page before.  Resulting in this one being a invariant metric.
   
   Number of user-ids--this one is neither invariant nor evaluation metric. Due to the enrollment could be dependent upon how we carry     out the "start free trial" page, we could expect to see different values in the control and experiment group. 
   
-  Number of clicks-- Comparable to number of cookies, this metric does not depend on how we carry out the "start free trial" page,         since the clicked users have not seen that page before they decide to click the button.
+  Number of clicks-- Comparable to number of cookies, this metric does not depend on how we carry out the "start free trial" page,         since the clicked users have not seen that page before they decide to click the button.  Resulting in this one being a invariant         metric.
   
-  Click-through-probability--Again, since the users have not seen the page we tested on before they decide to click the button, the       click-through-probability also does not depend on our test.
+  Click-through-probability--Again, since the users have not seen the page we tested on before they decide to click the button, the       click-through-probability also does not depend on our test.  This one would be an invariant metric.
 
-
+  
 # Measuring Variability--
 The analytical standard deviation is computed as std = sqrt(p * (1-p)/N)
 
